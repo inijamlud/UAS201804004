@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertBook"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="Insert New Book"
+        style="@style/fontPri"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/in_title"
+        style="@style/edit_text"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="Title" />
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/in_auth"        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="Author "/>
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/in_price"            android:layout_marginTop="10dp"
+
+        android:inputType="text"
+        android:hint="Price"/>
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/in_desc"        android:layout_marginTop="10dp"
+            android:hint="Description"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                style="@style/btn_Style"
+                android:id="@+id/btn_submit"
+                android:text="Submit"
+                android:layout_marginRight="15dp"
+                android:onClick="addData"/>
+
+            <Button
+                android:id="@+id/btn_show"
+                style="@style/btn_Style"
+                android:text="Show All"
+                android:onClick="showAll"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
